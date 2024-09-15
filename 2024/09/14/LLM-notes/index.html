@@ -22,7 +22,7 @@
 
   <meta name="description" content="LLM笔记这篇是关于LLM的一些笔记和乱七八糟想法，未必正确。 OpenAI一开始就是大佬云集+资金充裕，想要搞出通用人工智能的 看了下GPT-1的几个作者，Alec Radford，他也是DCGAN的一作，15年发表，15k引用 Karthik Narasimhan在16年有一篇RL paper，1k多引用 Tim Salimans在2016年有一篇GAN文章9k引用 对比Transformer">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LLM_notes">
+<meta property="og:title" content="LLM notes">
 <meta property="og:url" content="http://example.com/2024/09/14/LLM-notes/index.html">
 <meta property="og:site_name" content="Asakiyume">
 <meta property="og:description" content="LLM笔记这篇是关于LLM的一些笔记和乱七八糟想法，未必正确。 OpenAI一开始就是大佬云集+资金充裕，想要搞出通用人工智能的 看了下GPT-1的几个作者，Alec Radford，他也是DCGAN的一作，15年发表，15k引用 Karthik Narasimhan在16年有一篇RL paper，1k多引用 Tim Salimans在2016年有一篇GAN文章9k引用 对比Transformer">
@@ -31,10 +31,10 @@
 <meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/image-20231019032958867.png">
 <meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/v2-5e303a6c65774679128547b38daba755_r.jpg">
 <meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/image-20231019020243511.png">
-<meta property="og:image" content="http://example.com/Users/yifan/Desktop/programs/mynotes/LLM%5Ctyporapic%5Cimage-20231019020243511.png">
+<meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/image-20231019020243511.png">
 <meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/image-20231019020944629.png">
 <meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/image-20231019021021621.png">
-<meta property="og:image" content="https://pic2.zhimg.com/v2-f359de43f252179e1bb88838820c4b9d_r.jpg">
+<meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/114514.jpg">
 <meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/image-20231019023911359.png">
 <meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/image-20231019024634419.png">
 <meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/image-20240206123313894.png">
@@ -48,7 +48,7 @@
 <meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/image-20240223020959760.png">
 <meta property="og:image" content="http://example.com/2024/09/14/LLM-notes/image-20240223020943808.png">
 <meta property="article:published_time" content="2024-09-14T23:39:03.000Z">
-<meta property="article:modified_time" content="2024-09-14T23:44:59.810Z">
+<meta property="article:modified_time" content="2024-09-15T06:29:55.483Z">
 <meta property="article:author" content="Yifan">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2024/09/14/LLM-notes/image-20231019030303641.png">
@@ -66,7 +66,7 @@
   };
 </script>
 
-  <title>LLM_notes | Asakiyume</title>
+  <title>LLM notes | Asakiyume</title>
   
 
 
@@ -194,7 +194,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          LLM_notes
+          LLM notes
         </h1>
 
         <div class="post-meta">
@@ -205,7 +205,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-09-14 16:39:03 / Modified: 16:44:59" itemprop="dateCreated datePublished" datetime="2024-09-14T16:39:03-07:00">2024-09-14</time>
+              <time title="Created: 2024-09-14 16:39:03 / Modified: 23:29:55" itemprop="dateCreated datePublished" datetime="2024-09-14T16:39:03-07:00">2024-09-14</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -308,7 +308,7 @@
 <p>说是BERT只适合做分类这种，不适合做生成</p>
 <p><strong>模型结构：</strong></p>
 <p><img src="/2024/09/14/LLM-notes/image-20231019020243511.png" alt="image-20231019020243511"></p>
-<p><img src="/Users/yifan/Desktop/programs/mynotes/LLM%5Ctyporapic%5Cimage-20231019020243511.png" alt="image-20231019020243511"></p>
+<p><img src="/2024/09/14/LLM-notes/image-20231019020243511.png" alt="image-20231019020243511"></p>
 <p>这个之后可以仔细看一下</p>
 <p>比较<strong>Unsupervised objectives</strong></p>
 <p><strong><img src="/2024/09/14/LLM-notes/image-20231019020944629.png" alt="image-20231019020944629"></strong></p>
@@ -324,7 +324,7 @@
 <p><strong>1. Mixture of Experts（MoE）</strong>仅选择模型中的一部分进行计算</p>
 <p>由一个「门控网络」来选择咨询哪些专家。</p>
 <p>1.6万亿参数，但是用了MoE所以<strong>算起来还比较快</strong></p>
-<p><img src="https://pic2.zhimg.com/v2-f359de43f252179e1bb88838820c4b9d_r.jpg" alt="img"></p>
+<p><img src="/2024/09/14/LLM-notes/114514.jpg" alt="img"></p>
 <p>将Transformer中的前馈全连接子层（Feed-Forward Network，FFN）视为Expert，使用多个FFN代替原来单一的FFN，并且使用了最简单的路由选择策略，将K设置为1，即不同的输入只会选择一个FFN进行计算（<strong>sparse routing</strong>)</p>
 <p>（1）路由计算量减少，<strong>只有一个expert激活</strong>；</p>
 <p>（2）expert中的batch_size（专家容量）至少减半；</p>
@@ -435,7 +435,10 @@
     <a href="/2023/12/01/advanced%20C++/" rel="prev" title="Advanced C++">
       <i class="fa fa-chevron-left"></i> Advanced C++
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2024/09/14/MLreview/" rel="next" title="ML basic knowledge review">
+      ML basic knowledge review <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -508,14 +511,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
   </nav>
